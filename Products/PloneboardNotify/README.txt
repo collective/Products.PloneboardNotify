@@ -203,7 +203,7 @@ go back to our forum and add another conversation.
 
 Let's see what result will be generated.
 
->>> browser.getControl('Post comment').click()
+>>> browser.getControl(name='form.button.Post').click()
 Message subject: New comment added on the forum: Cool Music
 Message text:
 <html>
@@ -305,7 +305,7 @@ Now we simply need to see what is changed, starting a new discussion inside our 
 >>> browser.getControl('Start a new Conversation').click()
 >>> browser.getControl('Title').value = "Talking to webmaster"
 >>> browser.getControl('Body text').value = "<p>This will be sent only to Webmaster!</p>"
->>> browser.getControl('Post comment').click()
+>>> browser.getControl(name='form.button.Post').click()
 Message subject: New comment added on the forum: Cool Music
 Message text:
 <html>
@@ -344,7 +344,7 @@ Let's test this adding a new discussion.
 >>> browser.getControl('Start a new Conversation').click()
 >>> browser.getControl('Title').value = "Please visit this link!"
 >>> browser.getControl('Body text').value = """Please, visit <a title="News" class="internal-link" href="../our-forums/cool-music/news">this</a>."""
->>> browser.getControl('Post comment').click()
+>>> browser.getControl(name='form.button.Post').click()
 Message subject: New comment added on the forum: Cool Music
 Message text:
 <html>
