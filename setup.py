@@ -7,7 +7,8 @@ tests_require=['zope.testing', 'Products.PloneTestCase']
 
 setup(name='Products.PloneboardNotify',
       version=version,
-      description="A configurable Plone product for sending e-mails when new message is added on Ploneboard forum",
+      description="A configurable Plone product for sending e-mails when new messages "
+                  "are added to Ploneboard forums",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
